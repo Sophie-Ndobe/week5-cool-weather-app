@@ -1,0 +1,14 @@
+.Footer {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
