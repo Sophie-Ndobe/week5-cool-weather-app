@@ -1,8 +1,8 @@
 .Search {
   border-radius: 16px;
-  box-shadow: 0 30px 50px rbga(65, 50, 100, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #878787;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 
 .Search input {
@@ -20,8 +20,8 @@
 .Search button {
   background: #5585b5;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   padding: 15px 0;
-  margin-top: -5px;
+  height: 50px;
 }

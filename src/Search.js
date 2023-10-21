@@ -1,5 +1,7 @@
 import React from "react";
 import "./Search.css";
+import Weather from "./Weather";
+import Footer from "./Footer";
 
 export default function Search() {
   return (
@@ -18,6 +20,8 @@ export default function Search() {
           </div>
         </div>
       </form>
+      <Weather />
+      <Footer />
     </div>
   );
 }
