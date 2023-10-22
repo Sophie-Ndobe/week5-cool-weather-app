@@ -1,7 +1,7 @@
 import React from "react";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   let date = new Date();
 
   let hours = date.getHours();
@@ -30,13 +30,14 @@ export default function Weather() {
     <div className="Weather mt-5">
       <div className="row">
         <div className="col-6">
-          <h1>San Francisco</h1>
+          <h1>{props.city}</h1>
           <ul>
             <li>
-              {day} {hours}:{minutes}, few clouds
+              {day} {hours}:{minutes}, {props.description}
             </li>
             <li>
-              Humidity: <strong>86%</strong>, Wind: <strong>2.68km/h</strong>{" "}
+              Humidity: <strong>{props.humidity}%</strong>, Wind:{" "}
+              <strong>{props.wind}km/h</strong>{" "}
             </li>
           </ul>
         </div>
@@ -46,7 +47,7 @@ export default function Weather() {
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="Partly Cloudy"
             />
-            <h2>32</h2>
+            <h2>{props.temperature}</h2>
             <span className="units">
               <span>°C</span>|<span>°F</span>
             </span>
