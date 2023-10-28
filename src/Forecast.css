@@ -3,3 +3,7 @@
     list-style: none;
     text-align: center;
 }
+
+.Forecast .temperature {
+    color:#e8630a;
+}

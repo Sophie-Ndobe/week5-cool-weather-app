@@ -26,7 +26,9 @@ export default function Forecast(props) {
                 alt="Partly Cloudy"
               />
             </li>
-            <li>{props.maxTemp1}° {props.minTemp1}°</li>
+            <li className="temperature">
+              <strong>{props.maxTemp1}°</strong> {props.minTemp1}°
+            </li>
           </ul>
         </div>
         <div className="col-2">
@@ -38,7 +40,9 @@ export default function Forecast(props) {
                 alt="Partly Cloudy"
               />
             </li>
-            <li>{props.maxTemp2}° {props.minTemp2}°</li>
+            <li className="temperature">
+              <strong>{props.maxTemp2}°</strong> {props.minTemp2}°
+            </li>
           </ul>
         </div>
         <div className="col-2">
@@ -50,7 +54,9 @@ export default function Forecast(props) {
                 alt="Partly Cloudy"
               />
             </li>
-            <li>{props.maxTemp3}° {props.minTemp3}°</li>
+            <li className="temperature">
+              <strong>{props.maxTemp3}°</strong> {props.minTemp3}°
+            </li>
           </ul>
         </div>
         <div className="col-2">
@@ -62,7 +68,9 @@ export default function Forecast(props) {
                 alt="Partly Cloudy"
               />
             </li>
-            <li>{props.maxTemp4}° {props.minTemp4}°</li>
+            <li className="temperature">
+              <strong>{props.maxTemp4}°</strong> {props.minTemp4}°
+            </li>
           </ul>
         </div>
         <div className="col-2">
@@ -74,7 +82,9 @@ export default function Forecast(props) {
                 alt="Partly Cloudy"
               />
             </li>
-            <li>{props.maxTemp5}° {props.minTemp5}°</li>
+            <li className="temperature">
+              <strong>{props.maxTemp5}°</strong> {props.minTemp5}°
+            </li>
           </ul>
         </div>
       </div>
