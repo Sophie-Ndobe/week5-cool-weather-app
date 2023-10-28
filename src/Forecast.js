@@ -1,8 +1,11 @@
 import React from "react";
+import "./Forecast.css";
 
-export default function Forecast() {
+export default function Forecast(props) {
+  
+
   return (
-    <div className="Forecast">
+    <div className="Forecast mt-5">
       <div className="row">
         <div className="col-2">
           <ul>
