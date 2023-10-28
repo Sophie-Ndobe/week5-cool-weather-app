@@ -8,7 +8,7 @@ import Footer from "./Footer";
 export default function Search({ defaultCity }) {
   const [city, setCity] = useState(defaultCity);
   const [weather, setWeather] = useState({ ready: false });
-  const [forecast, setForecast] = useState(" ");
+  const [forecast, setForecast] = useState(defaultCity);
 
   function showWeather(response) {
     setWeather({
@@ -23,27 +23,25 @@ export default function Search({ defaultCity }) {
   }
 
   function showForecast(response) {
-    console.log(response);
-    console.log(response.data.daily[0].temperature.minimum);
     setForecast({
-      tempMin1: response.data.daily[0].temperature.minimum,
-      tempMax1: response.data.daily[0].temperature.maximum,
+      tempMin1: Math.round(response.data.daily[0].temperature.minimum),
+      tempMax1: Math.round(response.data.daily[0].temperature.maximum),
       icon1: response.data.daily[0].condition.icon,
       time1: response.data.daily[0].time,
-      tempMin2: response.data.daily[1].temperature.minimum,
-      tempMax2: response.data.daily[1].temperature.maximum,
+      tempMin2: Math.round(response.data.daily[1].temperature.minimum),
+      tempMax2: Math.round(response.data.daily[1].temperature.maximum),
       icon2: response.data.daily[1].condition.icon,
       time2: response.data.daily[1].time,
-      tempMin3: response.data.daily[2].temperature.minimum,
-      tempMax3: response.data.daily[2].temperature.maximum,
+      tempMin3: Math.round(response.data.daily[2].temperature.minimum),
+      tempMax3: Math.round(response.data.daily[2].temperature.maximum),
       icon3: response.data.daily[2].condition.icon,
       time3: response.data.daily[2].time,
-      tempMin4: response.data.daily[3].temperature.minimum,
-      tempMax4: response.data.daily[3].temperature.maximum,
+      tempMin4: Math.round(response.data.daily[3].temperature.minimum),
+      tempMax4: Math.round(response.data.daily[3].temperature.maximum),
       icon4: response.data.daily[3].condition.icon,
       time4: response.data.daily[3].time,
-      tempMin5: response.data.daily[4].temperature.minimum,
-      tempMax5: response.data.daily[4].temperature.maximum,
+      tempMin5: Math.round(response.data.daily[4].temperature.minimum),
+      tempMax5: Math.round(response.data.daily[4].temperature.maximum),
       icon5: response.data.daily[4].condition.icon,
       time5: response.data.daily[4].time,
     });
@@ -122,6 +120,7 @@ export default function Search({ defaultCity }) {
     );
   } else {
     weatherApiCall();
+    forecastApiCall();
     return <p>Loading...</p>;
   }
 }
