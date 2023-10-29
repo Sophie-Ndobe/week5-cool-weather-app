@@ -35,13 +35,7 @@
   margin-top: 30px;
 }
 
-.Weather .units {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1;
-    position: relative;
-    top: -15px;
-}
+
 
 .Weather .mainIcon {
   width: 100px;

@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 import Icons from "./Icons";
 
+
 export default function Weather(props) {
   let date = new Date();
 
@@ -47,10 +48,7 @@ export default function Weather(props) {
             <div className="mainIcon">
               <Icons iconUpdate={props.icon} size={60} />
             </div>
-            <h2>{props.temperature}</h2>
-            <span className="units">
-              <span>°C</span>|<span>°F</span>
-            </span>
+              
           </div>
         </div>
       </div>
