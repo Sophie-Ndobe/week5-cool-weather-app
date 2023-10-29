@@ -1,9 +1,32 @@
-.Forecast ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
+.Forecast p {
+  text-align: center;
 }
 
 .Forecast .temperature {
-    color:#e8630a;
+  color: #e8630a;
+}
+
+.Forecast .icon1 {
+  position: relative;
+  right: -10px;
+}
+
+.Forecast .icon2 {
+  position: relative;
+  right: 15px;
+}
+
+.Forecast .icon3 {
+  position: relative;
+  right: 35px;
+}
+
+.Forecast .icon4 {
+  position: relative;
+  right: 60px;
+}
+
+.Forecast .icon5 {
+  position: relative;
+  right: 85px;
 }

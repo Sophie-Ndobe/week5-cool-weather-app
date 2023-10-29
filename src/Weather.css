@@ -42,3 +42,9 @@
     position: relative;
     top: -15px;
 }
+
+.Weather .mainIcon {
+  width: 100px;
+  position: relative;
+  top: 40px;
+}

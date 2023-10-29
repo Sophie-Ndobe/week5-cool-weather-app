@@ -19,6 +19,7 @@ export default function Search({ defaultCity }) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       time: response.data.time,
+      icon: response.data.condition.icon,
     });
   }
 
@@ -92,6 +93,7 @@ export default function Search({ defaultCity }) {
           humidity={weather.humidity}
           description={weather.description}
           wind={weather.wind}
+          icon={weather.icon}
         />
         <Forecast
           minTemp1={forecast.tempMin1}

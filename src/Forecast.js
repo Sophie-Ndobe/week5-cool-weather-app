@@ -1,5 +1,6 @@
 import React from "react";
 import "./Forecast.css";
+import Icons from "./Icons";
 
 export default function Forecast(props) {
   let date1 = new Date(props.time1 * 1000);
@@ -17,75 +18,50 @@ export default function Forecast(props) {
   return (
     <div className="Forecast mt-5">
       <div className="row">
-        <div className="col-2">
-          <ul>
-            <li>{days[day1]}</li>
-            <li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-            </li>
-            <li className="temperature">
-              <strong>{props.maxTemp1}°</strong> {props.minTemp1}°
-            </li>
-          </ul>
+        <div className="col">
+          <p className="mb-3">{days[day1]}</p>
+          <div className="icon1">
+            <Icons iconUpdate1={props.icon1} size={50} />
+          </div>
+          <p className="temperature mt-3">
+            <strong>{props.maxTemp1}°</strong> {props.minTemp1}°
+          </p>
         </div>
-        <div className="col-2">
-          <ul>
-            <li>{days[day2]}</li>
-            <li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-            </li>
-            <li className="temperature">
-              <strong>{props.maxTemp2}°</strong> {props.minTemp2}°
-            </li>
-          </ul>
+        <div className="col">
+          <p className="mb-3">{days[day2]}</p>
+          <div className="icon2">
+            <Icons iconUpdate2={props.icon2} size={50} />
+          </div>
+          <p className="temperature mt-3">
+            <strong>{props.maxTemp2}°</strong> {props.minTemp2}°
+          </p>
         </div>
-        <div className="col-2">
-          <ul>
-            <li>{days[day3]}</li>
-            <li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-            </li>
-            <li className="temperature">
-              <strong>{props.maxTemp3}°</strong> {props.minTemp3}°
-            </li>
-          </ul>
+        <div className="col">
+          <p className="mb-3">{days[day3]}</p>
+          <div className="icon3">
+            <Icons iconUpdate3={props.icon3} size={50} />
+          </div>
+          <p className="temperature mt-3">
+            <strong>{props.maxTemp3}°</strong> {props.minTemp3}°
+          </p>
         </div>
-        <div className="col-2">
-          <ul>
-            <li>{days[day4]}</li>
-            <li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-            </li>
-            <li className="temperature">
-              <strong>{props.maxTemp4}°</strong> {props.minTemp4}°
-            </li>
-          </ul>
+        <div className="col">
+          <p className="mb-3">{days[day4]}</p>
+          <div className="icon4">
+            <Icons iconUpdate4={props.icon4} size={50} />
+          </div>
+          <p className="temperature mt-3">
+            <strong>{props.maxTemp4}°</strong> {props.minTemp4}°
+          </p>
         </div>
-        <div className="col-2">
-          <ul>
-            <li>{days[day5]}</li>
-            <li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-            </li>
-            <li className="temperature">
-              <strong>{props.maxTemp5}°</strong> {props.minTemp5}°
-            </li>
-          </ul>
+        <div className="col">
+          <p className="mb-3">{days[day5]}</p>
+          <div className="icon5">
+            <Icons iconUpdate5={props.icon5} size={50} />
+          </div>
+          <p className="temperature mt-3">
+            <strong>{props.maxTemp5}°</strong> {props.minTemp5}°
+          </p>
         </div>
       </div>
     </div>
