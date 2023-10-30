@@ -49,7 +49,7 @@ export default function Weather(props) {
               <Icons iconUpdate={props.icon} size={60} />
             </div>
             <div>
-              <UnitConversion />
+              <UnitConversion mainTemp={props.temperature} />
             </div>
           </div>
         </div>
